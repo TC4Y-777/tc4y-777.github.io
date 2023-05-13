@@ -1,0 +1,24 @@
+{
+  "name": "tc4y-777",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5",
+    "split-text-js": "^1.0.3",
+    "split-type": "^0.3.3",
+    "vue": "^3.2.47",
+    "vue-roller": "^2.1.0",
+    "vue-router": "^4.1.6",
+    "vue-typed-js": "^0.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "vite": "^4.3.2"
+  }
+}
