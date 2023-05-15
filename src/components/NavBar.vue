@@ -5,32 +5,32 @@ const links = [
     {
         id: 0,
         text: 'Home',
-        page: '#home'
+        page: '/home'
     },
     {
         id: 1,
         text: 'About',
-        page: '#about'
+        page: '/about'
     },
     {
         id: 2,
         text: 'Projects',
-        page: '#projects'
+        page: '/projects'
     },
     {
         id: 3,
         text: 'Seminars',
-        page: '#seminars'
+        page: '/seminars'
     },
     {
         id: 4,
         text: 'Achievements',
-        page: '#achievements'
+        page: '/achievements'
     },
     {
         id: 5,
         text: 'Contact Me',
-        page: '#contact'
+        page: '/contact'
     },
 ]
 </script>
@@ -39,7 +39,7 @@ const links = [
 
     <div class="navbar">
     <div class="mylogo">
-        <img src="https://www.jiffylubeontario.com/wp-content/uploads/2020/01/google-logo.png?x96536" />
+        <img src="../assets/logo.png" />
     </div>
 
     <!-- Create navigation bar menu items from array -->
@@ -56,16 +56,18 @@ const links = [
     margin-top: 10px;
 }
 .navmenuitem {
-    margin: 0 50px;
-    font-size: large;
+    margin: 0 30px;
+    /* font-size: large; */
 }
 
 .mylogo {
     position: fixed;
     left: 20px;
+    filter: drop-shadow(0 0 0.2em #e8e2ca);
 }
 .mylogo > img{
     width: 50px;
-    height: 50px;
+    height: 70px;
+    
 }
 </style>

@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue';
+import { KinesisContainer, KinesisElement } from 'vue-kinesis';
 import { Roller } from 'vue-roller';
 import "vue-roller/dist/style.css";
 
@@ -20,20 +21,26 @@ const roleArray = [
 
 <template>
     <div class="home">
-        <div class="homeimage">
-            <!-- Create stripes in the image -->
-            <div class="container">
-                <div class="clip clip1"></div>
-                <div class="clip clip2"></div>
-                <div class="clip clip3"></div>
-                <div class="clip clip4"></div>
-                <div class="clip clip5"></div>
-                <div class="clip clip6"></div>
-                <!-- <div class="clip clip7"></div> -->
-            </div>
-        </div>
-
+        <transition name="iamimageanim" appear>
+            <kinesis-container>
+                <kinesis-element :strength="20" type="depth">
+                    <div class="homeimage">
+                        <!-- Create stripes in the image -->
+                        <div class="container">
+                            <div class="clip clip1"></div>
+                            <div class="clip clip2"></div>
+                            <div class="clip clip3"></div>
+                            <div class="clip clip4"></div>
+                            <div class="clip clip5"></div>
+                            <div class="clip clip6"></div>
+                            <!-- <div class="clip clip7"></div> -->
+                        </div>
+                    </div>
+                </kinesis-element>
+            </kinesis-container>
+        </transition>
         <div class="homecontent">
+
             <!-- Generated from an online css text glitch generator -->
             <div class="iam">
                 <div class="glitch-wrapper">
@@ -43,7 +50,7 @@ const roleArray = [
 
             <div class="iamname">
                 <div class="glitch-wrapper">
-                    <div class="glitch" data-glitch="Ashish Sam T George">Ashish Sam T George</div>
+                    <div class="glitch" data-glitch="Ashish">Ashish</div>
                 </div>
             </div>
 
@@ -51,38 +58,36 @@ const roleArray = [
 
                 <!-- <component :is="comp"></component> -->
 
-                <Roller class="grid-item"
-                value="BACKEND ENGINEER"
-                default-value="BACKEND"
-                char-set="alphabet">
-            </Roller>
-            <Roller class="grid-item"
-                    value="BLOCKCHAIN SOFTWARE DEVELOPER"
-                    default-value="BLOCKCHAIN"
-                    duration="1000"
-                    char-set="alphabet">
+                <Roller class="grid-item" value="BACKEND ENGINEER" duration="2000" char-set="alphabet">
                 </Roller>
-            <Roller class="grid-item"
-                    value="OPEN SOURCE CONTRIBUTOR"
-                    default-value="OPEN SOURCE"
-                    duration="1000"
-                    char-set="alphabet">
+                <Roller class="grid-item" value="BLOCKCHAIN SOFTWARE DEVELOPER" duration="2000" char-set="alphabet">
                 </Roller>
-                <Roller class="grid-item"
-                    value="WEB DEVELOPER"
-                    default-value="WEB"
-                    duration="1000"
-                    char-set="alphabet">
+                <Roller class="grid-item" value="OPEN SOURCE CONTRIBUTOR" duration="2000" char-set="alphabet">
+                </Roller>
+                <Roller class="grid-item" value="WEB DEVELOPER" duration="2000" char-set="alphabet">
                 </Roller>
             </div>
 
-            <div class="iamsocial">
-                <img class="socialLogo anim1" src="../assets/linkedin.png" alt="linkedinlogo" />
-                <img class="socialLogo anim2" src="../assets/discord.png" alt="discordlogo" />
-                <img class="socialLogo anim1" src="../assets/email.png" alt="emaillogo" />
-                <img class="socialLogo anim2" src="../assets/whatsapp.png" alt="whatsapplogo" />
-                <img class="socialLogo anim1" src="../assets/github.png" alt="githublogo" />
-            </div>
+            <transition name="iamsocialanim" appear>
+                <kinesis-container>
+                    <kinesis-element strength="20" type="depth_inv">
+                        <div class="iamsocial">
+                            <a href="https://www.linkedin.com/in/astg7542/" target="_blank"><img class="socialLogo anim1"
+                                    src="../assets/linkedin.png" alt="linkedinlogo" /></a>
+                            <a href="https://discord.com/users/763669633223753750" target="_blank"><img
+                                    class="socialLogo anim2" src="../assets/discord.png" alt="discordlogo" /></a>
+                            <a href="mailto:ashishgeorge752@gmail.com" target="_blank"><img class="socialLogo anim1"
+                                    src="../assets/email.png" alt="emaillogo" /></a>
+                            <a href="https://wa.me/919446020612" target="_blank"><img class="socialLogo anim2"
+                                    src="../assets/whatsapp.png" alt="whatsapplogo" /></a>
+                            <a href="https://github.com/TC4Y-777" target="_blank"><img class="socialLogo anim1"
+                                    src="../assets/github.png" alt="githublogo" /></a>
+
+                        </div>
+                    </kinesis-element>
+                </kinesis-container>
+            </transition>
+
         </div>
     </div>
 </template>
@@ -92,6 +97,33 @@ const roleArray = [
     height: 90vh;
     display: flex;
     align-items: center;
+
+}
+
+.iamimageanim-enter-from {
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.iamimageanim-enter-to {
+    opacity: 1;
+    transform: translateX(0px)
+}
+
+.iamimageanim-enter-active {
+    transition: opacity 10s ease, transform 5s ease;
+}
+
+.iamsocialanim-enter-from {
+    transform: translateY(100%)
+}
+
+.iamsocialanim-enter-to {
+    transform: translateY(0px)
+}
+
+.iamsocialanim-enter-active {
+    transition: transform 2s ease;
 }
 
 /* Main Image CSS - Start */
@@ -101,6 +133,7 @@ const roleArray = [
     height: 500px;
     /* Animate the main image up and down */
     animation: updown 4s ease infinite;
+    filter: drop-shadow(0 0 2em #e8e2ca);
 }
 
 .container .clip {
@@ -545,7 +578,7 @@ const roleArray = [
 
 /* Job Roles CSS - Start */
 
-.iamroles{
+.iamroles {
     margin-top: 20px;
     padding-top: 20px;
     font-size: large;
@@ -556,15 +589,17 @@ const roleArray = [
 }
 
 
-.socialLogo{
-    margin: 100px 20px;
+.socialLogo {
+    margin: 70px 20px;
     padding: 20px 10px;
-}
-.anim1{
-    animation: updown 2s ease infinite;
-}
-.anim2{
-    animation: downup 2s ease infinite;
+    filter: drop-shadow(0 0 .5em #e8e2ca);
 }
 
+.anim1 {
+    animation: updown 2s ease infinite;
+}
+
+.anim2 {
+    animation: downup 2s ease infinite;
+}
 </style>
