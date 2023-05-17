@@ -8,7 +8,7 @@ import NavBar from '@/components/NavBar.vue';
 
   <NavBar />
 
-  <div>
+  <div class="router-view-div">
   <router-view />
   </div>
   <!-- <div>
@@ -26,6 +26,7 @@ import NavBar from '@/components/NavBar.vue';
 </template>
 
 <style scoped>
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -37,6 +38,13 @@ import NavBar from '@/components/NavBar.vue';
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.router-view-div{
+  width: 90vw;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
 }
 
 </style>
