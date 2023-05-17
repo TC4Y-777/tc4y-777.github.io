@@ -56,6 +56,7 @@ const links = [
     margin-top: 10px;
 }
 .navmenuitem {
+    
     margin: 0 30px;
     /* font-size: large; */
 }
