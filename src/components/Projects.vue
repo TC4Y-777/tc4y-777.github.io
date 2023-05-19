@@ -15,97 +15,97 @@ typeEffect()
 
 const techStack = [
     {
-        path: "src/assets/techStack/beanie.png",
+        path: "../assets/beanie.png",
         alt: "python_beanie",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/docker.png",
+        path: "../assets/docker.png",
         alt: "docker",
         glow: "",
         position: "second-row"
     },
     {
-        path: "src/assets/techStack/graphql.png",
+        path: "../assets/graphql.png",
         alt: "graphql",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/html.png",
+        path: "../assets/html.png",
         alt: "html",
         glow: "",
         position: "third-row"
     },
     {
-        path: "src/assets/techStack/java.png",
+        path: "../assets/java.png",
         alt: "java",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/js.png",
+        path: "../assets/js.png",
         alt: "js",
         glow: "",
         position: "second-row"
     },
     {
-        path: "src/assets/techStack/linux.png",
+        path: "../assets/linux.png",
         alt: "linux",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/spring-boot.png",
+        path: "../assets/spring-boot.png",
         alt: "spring_boot",
         glow: "#6db53d",
         position: "fourth-row"
     },
 
     {
-        path: "src/assets/techStack/mongodb.png",
+        path: "../assets/mongodb.png",
         alt: "mongodb",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/python.png",
+        path: "../assets/python.png",
         alt: "python",
         glow: "",
         position: "second-row"
     },
     {
-        path: "src/assets/techStack/rabbitmq.png",
+        path: "../assets/rabbitmq.png",
         alt: "rabbitmq",
         glow: "",
         position: "first-row"
     },
     // {
-    //     path: "src/assets/techStack/restapi.png",
+    //     path: "../assets/restapi.png",
     //     alt: "restapi",
     //     glow: ""
     // },
     {
-        path: "src/assets/techStack/solidity.png",
+        path: "../assets/solidity.png",
         alt: "solidity",
         glow: "",
         position: "third-row"
     },
     {
-        path: "src/assets/techStack/minio.png",
+        path: "../assets/minio.png",
         alt: "minio",
         glow: "",
         position: "first-row"
     },
     {
-        path: "src/assets/techStack/strawberry.png",
+        path: "../assets/strawberry.png",
         alt: "python_strawberry",
         glow: "",
         position: "second-row"
     },
     {
-        path: "src/assets/techStack/vuejs.png",
+        path: "../assets/vuejs.png",
         alt: "vuejs",
         glow: "",
         position: "first-row"
@@ -157,9 +157,9 @@ const techStack = [
                                 <div class="text-h6">CloudStore</div>
                                 <div class="text-subtitle2">Shop Aggregation Platform</div>
 
-                                <q-btn flat round color="red" icon="img:src/assets/techStack/icons/spring-boot.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/mongodb.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/vuejs.png" />
+                                <q-btn flat round color="red" icon="img:../assets/spring-boot-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/mongodb-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/vuejs-icon.png" />
                             </q-card-section>
 
                         </q-card>
@@ -178,11 +178,11 @@ const techStack = [
                                 <div class="text-h6">Pigihi</div>
                                 <div class="text-subtitle2">Microservice-oriented e-commerce application</div>
 
-                                <q-btn flat round color="red" icon="img:src/assets/techStack/icons/spring-boot.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/mongodb.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/docker.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/python.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/vuejs.png" />
+                                <q-btn flat round color="red" icon="img:../assets/spring-boot-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/mongodb-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/docker-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/python-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/vuejs-icon.png" />
 
                             </q-card-section>
 
@@ -202,11 +202,11 @@ const techStack = [
                                 <div class="text-h6">Asynchronous Communication</div>
                                 <div class="text-subtitle2">Communicate asynchronously using rabbitmq</div>
 
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/rabbitmq.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/python.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/graphql.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/strawberry.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/docker.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/rabbitmq-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/python-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/graphql-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/strawberry-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/docker-icon.png" />
 
                             </q-card-section>
 
@@ -226,11 +226,11 @@ const techStack = [
                                 <div class="text-h6">Minio Migration</div>
                                 <div class="text-subtitle2">Migrate from aws to minio</div>
 
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/python.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/minio.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/graphql.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/strawberry.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/docker.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/python-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/minio-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/graphql-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/strawberry-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/docker.png-icon" />
 
                             </q-card-section>
 
@@ -250,10 +250,10 @@ const techStack = [
                                 <div class="text-h6">OJS (Open Journal Systems)</div>
                                 <div class="text-subtitle2">Site for OJS South Indian Community</div>
 
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/html.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/js.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/linux.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/vuejs.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/html-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/js-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/linux-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/vuejs-icon.png" />
 
                             </q-card-section>
 
@@ -273,12 +273,12 @@ const techStack = [
                                 <div class="text-h6">DecShare</div>
                                 <div class="text-subtitle2">Decentralized Crowdfunding platform - In Progress</div>
 
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/html.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/js.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/solidity.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/linux.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/vuejs.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/docker.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/html-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/js-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/solidity-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/linux-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/vuejs-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/docker-icon.png" />
 
                             </q-card-section>
 
@@ -298,13 +298,13 @@ const techStack = [
                                 <div class="text-h6">Crypted</div>
                                 <div class="text-subtitle2">Decentralized cryptocurrency exchange - In Progress</div>
 
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/html.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/js.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/solidity.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/linux.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/java.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/vuejs.png" />
-                                <q-btn flat round color="teal" icon="img:src/assets/techStack/icons/docker.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/html-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/js-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/solidity-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/linux-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/java-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/vuejs-icon.png" />
+                                <q-btn flat round color="teal" icon="img:../assets/docker-icon.png" />
 
                             </q-card-section>
 
