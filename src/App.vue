@@ -2,6 +2,8 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import NavBar from '@/components/NavBar.vue';
 
+import 'animate.css'
+
 </script>
 
 <template>
@@ -9,7 +11,15 @@ import NavBar from '@/components/NavBar.vue';
   <NavBar />
 
   <div class="router-view-div">
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition 
+    enter-active-class="animate__animated animate__fadeInUp animate__slow" 
+    leave-active-class="animate__animated animate__fadeOutUp animate__slow"
+    mode="out-in"
+    >
+      <component :is="Component" />
+    </transition>
+  </router-view>
   </div>
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">

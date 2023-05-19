@@ -17,16 +17,16 @@ const links = [
         text: 'Projects',
         page: '/projects'
     },
-    {
-        id: 3,
-        text: 'Seminars',
-        page: '/seminars'
-    },
-    {
-        id: 4,
-        text: 'Achievements',
-        page: '/achievements'
-    },
+    // {
+    //     id: 3,
+    //     text: 'Seminars',
+    //     page: '/seminars'
+    // },
+    // {
+    //     id: 4,
+    //     text: 'Achievements',
+    //     page: '/achievements'
+    // },
     {
         id: 5,
         text: 'Contact Me',
@@ -39,7 +39,9 @@ const links = [
 
     <div class="navbar">
     <div class="mylogo">
+        <router-link to="/">
         <img src="../assets/logo.png" />
+        </router-link>
     </div>
 
     <!-- Create navigation bar menu items from array -->
@@ -70,5 +72,13 @@ const links = [
     width: 50px;
     height: 70px;
     
+}
+a:hover {
+  color: #e8e2ca;
+  filter: drop-shadow(0 0 2em #e8e2ca);
+}
+a.router-link-active{
+  border-bottom: 1px solid #e8e2ca;
+  filter: drop-shadow(0 0 1em #e8e2ca);
 }
 </style>

@@ -21,10 +21,6 @@ a {
   text-decoration: inherit;
   font-size: large;
 }
-a:hover {
-  color: #e8e2ca;
-  filter: drop-shadow(0 0 2em #e8e2ca);
-}
 
 body {
   margin: 0;

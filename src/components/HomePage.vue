@@ -70,7 +70,7 @@ const roleArray = [
 
             <transition name="iamsocialanim" appear>
                 <kinesis-container>
-                    <kinesis-element strength="20" type="depth_inv">
+                    <kinesis-element :strength="20" type="depth_inv">
                         <div class="iamsocial">
                             <a href="https://www.linkedin.com/in/astg7542/" target="_blank"><img class="socialLogo anim1"
                                     src="../assets/linkedin.png" alt="linkedinlogo" /></a>
