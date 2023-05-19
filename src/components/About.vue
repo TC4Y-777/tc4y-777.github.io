@@ -16,6 +16,7 @@ typeEffect()
 </script>
 
 <template>
+    <div>
     <div class="abouttitle">
         <div class="code">
             <p class="typingEffect">
@@ -44,7 +45,11 @@ typeEffect()
                 OJS (Open Journal Systems).
             </p>
             <div class="leftpane-button">
-                <button>Download Resume</button>
+                <a href="https://drive.google.com/uc?export=download&id=1ioUGeRh3IPe5xXDd23Q1nztZUJcnmM1R" target="_self">
+                <button>
+                    Download Resume
+                </button>
+                </a>
             </div>
         </div>
         </transition>
@@ -94,6 +99,7 @@ typeEffect()
             </div>
         </div>
         </transition>
+    </div>
     </div>
 </template>
 
